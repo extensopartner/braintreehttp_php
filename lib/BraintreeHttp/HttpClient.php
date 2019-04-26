@@ -86,7 +86,7 @@ class HttpClient
         }
 
         if (strpos($this->environment->baseUrl(), "https://") === 0) {
-            $curl->setOpt(CURLOPT_SSL_VERIFYPEER, true);
+            $curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
             $curl->setOpt(CURLOPT_SSL_VERIFYHOST, 2);
         }
 
